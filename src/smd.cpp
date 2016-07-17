@@ -21,6 +21,7 @@ static char THIS_FILE[] = __FILE__;
 #include "sgraph.h"
 
 #include "tile.h"
+#include "remesh.h"
 
 #include "params.h"
 

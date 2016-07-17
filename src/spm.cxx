@@ -97,11 +97,14 @@ int main( int argc, char *argv[] )
       // int div = INTERVAL;
       int div = atoi(argv[4]);
       int type = (atoi(argv[3]) == 0) ? DIFF_GEODIS : DIFF_CHORD;
+      // int div = 12;
+      // int type = DIFF_GEODIS;
       Sppd *newppd = tolatticeppd( ppd, div, type );
 //        Sppd *newppd = toradialppd( ppd, div );
 
       // write ppd
       write_ppd_file( argv[2], newppd, FALSE );
+      // write_ppd_file( "remesh.ppd", newppd, FALSE );
       write_ppd_file( "parammodtex.ppd", ppd, TRUE );
       write_ppd_uvw( "remeshuvw.ppd", newppd );
       write_ppd_uvw( "reparam.ppd", ppd );

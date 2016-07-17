@@ -86,7 +86,7 @@ cygwin:
 	"LDLIBS = -lm" \
 	"CXX = g++" \
 	"AR = ar" \
-	"CXXFLAGS = -O2 -DWIN32 -Wall" \
+	"CXXFLAGS = -O3 -D_WIN32 -Wall" \
 	"RANLIB = ranlib"
 
 cygwin-debug:
@@ -94,7 +94,7 @@ cygwin-debug:
 	"LDLIBS = -lm" \
 	"CXX = g++" \
 	"AR = ar" \
-	"CXXFLAGS = -O2 -DWIN32 -g3 -Wall -D_DEBUG" \
+	"CXXFLAGS = -O3 -D_WIN32 -g3 -Wall -D_DEBUG" \
 	"RANLIB = ranlib"
 
 target : $(BSTARGET) $(TKTARGET) $(SAMPLE)

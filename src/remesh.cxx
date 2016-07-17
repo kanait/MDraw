@@ -322,6 +322,8 @@ void remL_internal_update( Splp* lp, Vec2d* uvcorner, int div,
 	  fprintf(stderr, "cnt %d\n", cnt );
 	  break;
 	}
+
+      // if ( cnt == 10 ) break;
     }
 
 }
@@ -614,6 +616,7 @@ double uv_geodesic_distance( Sped* edS, Spfc* fcS, int div, int q, Vec2d* ouv,
 #endif
 
 	      // エッジが境界エッジのときにはループを抜ける
+              // if ( ned == NULL ) break;
 	      if ( ned->isBoundary == TRUE ) break;
 	  
 	      // fc の反対側の面
@@ -859,6 +862,7 @@ double uv_isoparam_diff( Splp* lp, int div, Vec2d* uvcorner,
   // パラメータ空間上での境界上の始点と終点の格納
   for ( int i = 1; i < div; ++i )
     {
+      // printf("********** i = %d\n", i );
       Vec2d uvstart;
       int p = ( dir == XPARAM ) ? (i * (div + 1)) : (i);
       V2Equal( &(uvstart), &(ouv[p]) );
@@ -912,6 +916,7 @@ double uv_isoparam_diff( Splp* lp, int div, Vec2d* uvcorner,
 	  // ステップ長さ
 	  double len3 = geo / (double) div;
   	  display("j %d len3(created) %g\n", j, len3 );
+  	  // printf("j %d len3(created) %g\n", j, len3 );
 
 	  double tmpdis = 0.0;
 	  
@@ -921,6 +926,10 @@ double uv_isoparam_diff( Splp* lp, int div, Vec2d* uvcorner,
 		      (ed != NULL) ? ed->no : SMDNULL,
 		      (ed != NULL) ? ed->isBoundary : SMDNULL,
 		      fc->no );
+	      // printf("\tj %d ed %d %d fc %d\n", j,
+              //        (ed != NULL) ? ed->no : SMDNULL,
+              //        (ed != NULL) ? ed->isBoundary : SMDNULL,
+              //        fc->no );
 		  
 	      Vec2d intsec2;
 	      Sped* ned = ppd_find_nextedge_intsec( fc, ed, &startL, &endL, &intsec2 );
@@ -1046,6 +1055,7 @@ double uv_isoparam_diff( Splp* lp, int div, Vec2d* uvcorner,
 		      V3Equal( &pos, &intsec );
 		  
 		      // エッジが境界エッジのときにはループを抜ける
+                      // if ( ned == NULL ) break;
 		      if ( ned->isBoundary == TRUE ) break;
 		      
 		      // fc の反対側の面
@@ -1053,15 +1063,14 @@ double uv_isoparam_diff( Splp* lp, int div, Vec2d* uvcorner,
 		      ed = ned;
 		    }
 		}
-	      
-	      display("while continue! len3 %g\n", len3);
-	      
-	    }
-	  
-	  display("broken! tmpdis %g\n", tmpdis);
-	  
-	}
-      
+
+              display("while continue! len3 %g\n", len3);
+
+            }
+
+          display("broken! tmpdis %g\n", tmpdis);
+          // printf("broken! tmpdis %g\n", tmpdis);
+        }
     }
   // アップデート
   double val = 0.0;
