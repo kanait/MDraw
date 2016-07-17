@@ -7,8 +7,13 @@
 #ifndef _REMESH_H
 #define _REMESH_H
 
+// remesh におけるパラメータ補正のタイプ
+#define DIFF_GEODIS   0   // 測地線による補正
+#define DIFF_CHORD    1   // 弦長による補正
+#define DIFF_NO       2   // 補正しない
+
 // functions
-extern Sppd *tolatticeppd(Sppd *, int);
+extern Sppd *tolatticeppd(Sppd *, int, int);
 extern Sppd *remL_init(int, Spvt **);
 extern void remL_internal(Splp *, Vec2d *, int, Spvt **);
 extern void remL_internal_update(Splp *, Vec2d *, int, Vec2d *, Vec *, int);

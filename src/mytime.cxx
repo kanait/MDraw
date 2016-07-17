@@ -16,7 +16,8 @@ static char THIS_FILE[] = __FILE__;
 #include <stdio.h>
 #include <sys/types.h>
 
-#ifndef WIN32
+#if defined(_WIN32) || defined(_WIN64)
+#else
 #include <unistd.h>
 #include <limits.h>
 #include <time.h>
@@ -37,7 +38,8 @@ struct tms {
 /* long  times(); */
 #define TICKS 60.
 
-#ifndef WIN32
+#if defined(_WIN32) || defined(_WIN64)
+#else
 static struct tms tbuf1;
 static long real1;
 #endif
@@ -45,7 +47,8 @@ static long real1;
 // start timer
 void time_start(void)
 {				
-#ifndef WIN32
+#if defined(_WIN32) || defined(_WIN64)
+#else
   real1 = times(&tbuf1);
 #endif
 }
@@ -53,7 +56,8 @@ void time_start(void)
 // stop timer 
 void time_stop( void )
 {				
-#ifndef WIN32
+#if defined(_WIN32) || defined(_WIN64)
+#else
   struct tms tbuf2;
   long  real2;
   double realtime, usertime, systime;
@@ -71,7 +75,8 @@ void time_stop( void )
 // stop timer 
 void time_stop_value( double *realtime, double *usertime, double *systime )
 {				
-#ifndef WIN32
+#if defined(_WIN32) || defined(_WIN64)
+#else
   struct tms tbuf2;
   long  real2;
   double ct;

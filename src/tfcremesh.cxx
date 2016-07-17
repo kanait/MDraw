@@ -54,7 +54,7 @@ Sppd *tolatticemesh( TFace *tfc, int div,
   if ( tfc->n_tedge != RECTANGLE ) return NULL;
 
 #if defined(_DEBUG)
-  tmp1ppd = swin->screenatr.current_ppd;
+//  tmp1ppd = swin->screenatr.current_ppd;
 #endif
 
   display("-->rem 1\n");

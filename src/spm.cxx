@@ -40,20 +40,25 @@ static char THIS_FILE[] = __FILE__;
 
 #if !defined(_WINDOWS)
 
-#define INTERVAL 50
-//  #define INTERVAL 4
+//#define INTERVAL 50
+#define INTERVAL 10
 
 int main( int argc, char *argv[] )
 {
-  if ( argc != 2 )
+#if 1
+  if ( argc != 5 )
     {
-      fprintf( stderr, "usage: %s in.ppd\n", argv[0] );
+      fprintf( stderr, "usage: %s in.ppd out.ppd type num.\n", argv[0] );
+      fprintf( stderr, "\ttype: remeshing type: 0: geodesic distance, 1: chord length. \n" );
+      fprintf( stderr, "\tnum: the number of divisions. \n" );
       exit(1);
     }
+#endif
 
   // open ppd
   Sppd *ppd = (Sppd *) NULL;
   if ( (ppd  = open_ppd( argv[1], TRUE )) == NULL )
+  // if ( (ppd  = open_ppd( "tigerear.ppd", TRUE )) == NULL )
     {
       fprintf( stderr, "Error: can't open %s.\n", argv[1] );
       exit(1);
@@ -89,12 +94,14 @@ int main( int argc, char *argv[] )
       write_ppd_uvw( "remeshuvw1.ppd", ppd );
 #endif
       
-      int div = INTERVAL;
-      Sppd *newppd = tolatticeppd( ppd, div );
+      // int div = INTERVAL;
+      int div = atoi(argv[4]);
+      int type = (atoi(argv[3]) == 0) ? DIFF_GEODIS : DIFF_CHORD;
+      Sppd *newppd = tolatticeppd( ppd, div, type );
 //        Sppd *newppd = toradialppd( ppd, div );
 
       // write ppd
-      write_ppd_file( "remesh.ppd", newppd, FALSE );
+      write_ppd_file( argv[2], newppd, FALSE );
       write_ppd_file( "parammodtex.ppd", ppd, TRUE );
       write_ppd_uvw( "remeshuvw.ppd", newppd );
       write_ppd_uvw( "reparam.ppd", ppd );

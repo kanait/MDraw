@@ -45,7 +45,7 @@ Sppd* tmpppd = NULL;
 //
 // grid mesh for ppd
 //
-Sppd *tolatticeppd( Sppd *ppd, int div )
+Sppd *tolatticeppd( Sppd *ppd, int div, int type )
 {
   if ( ppd == NULL ) return NULL;
   if ( ppd->splp == NULL ) return NULL;
@@ -99,7 +99,8 @@ Sppd *tolatticeppd( Sppd *ppd, int div )
     }
 
   // 補正
-  remL_internal_update( ppd->splp, uvcorner, div, duv, dvec, DIFF_GEODIS );
+  //remL_internal_update( ppd->splp, uvcorner, div, duv, dvec, DIFF_GEODIS );
+  remL_internal_update( ppd->splp, uvcorner, div, duv, dvec, type );
 
   // 一旦アップデート
   for ( int i = 0; i < vn; ++i )
