@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{5D367C09-069A-4C67-A030-F43538D7B0FF}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;MFC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\OpenGL.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\OpenGL.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\OpenGL.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Debug/MDraw.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\OpenGL.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\OpenGL.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\OpenGL.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Asp.cxx" />
+    <ClCompile Include="bitmap.cpp" />
+    <ClCompile Include="cylspm.cxx" />
+    <ClCompile Include="dialog.cpp" />
+    <ClCompile Include="draw.cpp" />
+    <ClCompile Include="dspr.cxx" />
+    <ClCompile Include="edit.cpp" />
+    <ClCompile Include="esp.cxx" />
+    <ClCompile Include="esptree.cxx" />
+    <ClCompile Include="ffwarp.cxx" />
+    <ClCompile Include="file.cxx" />
+    <ClCompile Include="floater.cxx" />
+    <ClCompile Include="glppd.cpp" />
+    <ClCompile Include="gltile.cpp" />
+    <ClCompile Include="hestack.cxx" />
+    <ClCompile Include="hidden.cpp" />
+    <ClCompile Include="intsec.cxx" />
+    <ClCompile Include="linbcg.cxx" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MaterialDialog.cpp" />
+    <ClCompile Include="matlib.cxx" />
+    <ClCompile Include="mdw.cxx" />
+    <ClCompile Include="MeshInfoDialog.cpp" />
+    <ClCompile Include="mytime.cxx" />
+    <ClCompile Include="OpenGL.cpp" />
+    <ClCompile Include="OpenGLDoc.cpp" />
+    <ClCompile Include="OpenGLView.cpp" />
+    <ClCompile Include="oppd.cxx" />
+    <ClCompile Include="params.cxx" />
+    <ClCompile Include="pick.cpp" />
+    <ClCompile Include="ppd.cxx" />
+    <ClCompile Include="ppdedge.cxx" />
+    <ClCompile Include="ppdface.cxx" />
+    <ClCompile Include="ppdlist.cxx" />
+    <ClCompile Include="ppdloop.cxx" />
+    <ClCompile Include="ppdnormal.cxx" />
+    <ClCompile Include="ppdpart.cxx" />
+    <ClCompile Include="ppdsolid.cxx" />
+    <ClCompile Include="ppdvertex.cxx" />
+    <ClCompile Include="ps.cxx" />
+    <ClCompile Include="quadtree.cxx" />
+    <ClCompile Include="QuitDialog.cpp" />
+    <ClCompile Include="remesh.cxx" />
+    <ClCompile Include="screen.cxx" />
+    <ClCompile Include="sellist.cxx" />
+    <ClCompile Include="sgprique.cxx" />
+    <ClCompile Include="sgraph.cxx" />
+    <ClCompile Include="sigproc.cxx" />
+    <ClCompile Include="smd.cpp" />
+    <ClCompile Include="smf.cxx" />
+    <ClCompile Include="SPDialog.cpp" />
+    <ClCompile Include="spedprique.cxx" />
+    <ClCompile Include="spm.cxx" />
+    <ClCompile Include="SRDialog.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="texture.cxx" />
+    <ClCompile Include="tfcremesh.cxx" />
+    <ClCompile Include="tile.cxx" />
+    <ClCompile Include="TileDialog.cpp" />
+    <ClCompile Include="umbrella.cxx" />
+    <ClCompile Include="uvwsigproc.cxx" />
+    <ClCompile Include="veclib.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asp.h" />
+    <ClInclude Include="Bitmap.h" />
+    <ClInclude Include="color.h" />
+    <ClInclude Include="cylspm.h" />
+    <ClInclude Include="dialog.h" />
+    <ClInclude Include="draw.h" />
+    <ClInclude Include="dspr.h" />
+    <ClInclude Include="edit.h" />
+    <ClInclude Include="esp.h" />
+    <ClInclude Include="esplist.h" />
+    <ClInclude Include="esptree.h" />
+    <ClInclude Include="ffwarp.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="floater.h" />
+    <ClInclude Include="glppd.h" />
+    <ClInclude Include="gltile.h" />
+    <ClInclude Include="hestack.h" />
+    <ClInclude Include="hidden.h" />
+    <ClInclude Include="intsec.h" />
+    <ClInclude Include="linbcg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="MaterialDialog.h" />
+    <ClInclude Include="matlib.h" />
+    <ClInclude Include="mdw.h" />
+    <ClInclude Include="MeshInfoDialog.h" />
+    <ClInclude Include="mtl.h" />
+    <ClInclude Include="mytime.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="OpenGLDoc.h" />
+    <ClInclude Include="OpenGLView.h" />
+    <ClInclude Include="oppd.h" />
+    <ClInclude Include="params.h" />
+    <ClInclude Include="pick.h" />
+    <ClInclude Include="ppd.h" />
+    <ClInclude Include="ppdedge.h" />
+    <ClInclude Include="ppdface.h" />
+    <ClInclude Include="ppdlist.h" />
+    <ClInclude Include="ppdloop.h" />
+    <ClInclude Include="ppdnormal.h" />
+    <ClInclude Include="ppdpart.h" />
+    <ClInclude Include="ppdsolid.h" />
+    <ClInclude Include="ppdvertex.h" />
+    <ClInclude Include="ps.h" />
+    <ClInclude Include="quadtree.h" />
+    <ClInclude Include="QuitDialog.h" />
+    <ClInclude Include="remesh.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="screen.h" />
+    <ClInclude Include="sellist.h" />
+    <ClInclude Include="sgprique.h" />
+    <ClInclude Include="sgraph.h" />
+    <ClInclude Include="sigproc.h" />
+    <ClInclude Include="smd.h" />
+    <ClInclude Include="smdsrc.h" />
+    <ClInclude Include="smf.h" />
+    <ClInclude Include="SPDialog.h" />
+    <ClInclude Include="spedprique.h" />
+    <ClInclude Include="spm.h" />
+    <ClInclude Include="SRDialog.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="tfcremesh.h" />
+    <ClInclude Include="tile.h" />
+    <ClInclude Include="TileDialog.h" />
+    <ClInclude Include="umbrella.h" />
+    <ClInclude Include="uvwsigproc.h" />
+    <ClInclude Include="veclib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\OpenGL.ico" />
+    <Image Include="res\OpenGLDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\OpenGL.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

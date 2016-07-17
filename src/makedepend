@@ -1,0 +1,449 @@
+dspr.o: StdAfx.h smd.h sigproc.h dspr.h
+file.o: StdAfx.h smd.h file.h params.h
+mytime.o: StdAfx.h smd.h
+oppd.o: StdAfx.h smd.h oppd.h
+linbcg.o: StdAfx.h smd.h
+matlib.o: StdAfx.h smd.h veclib.h
+ppd.o: StdAfx.h ppd.h ppdsolid.h ppdpart.h
+ppd.o: ppdvertex.h ppdedge.h ppdface.h ppdnormal.h ppdloop.h
+ppdedge.o: StdAfx.h smd.h ppdvertex.h ppdedge.h veclib.h
+ppdface.o: StdAfx.h smd.h ppdvertex.h ppdface.h ppdedge.h veclib.h
+ppdlist.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+ppdlist.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ppdlist.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+ppdlist.o: /usr/include/bits/mathcalls.h
+ppdlist.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+ppdlist.o: smd.h /usr/include/stdio.h
+ppdlist.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ppdlist.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ppdlist.o: /usr/include/bits/types.h /usr/include/libio.h
+ppdlist.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+ppdlist.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+ppdlist.o: /usr/include/endian.h /usr/include/bits/endian.h
+ppdlist.o: /usr/include/sys/select.h /usr/include/bits/select.h
+ppdlist.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+ppdlist.o: /usr/include/alloca.h /usr/include/malloc.h ppd.h ppdsolid.h
+ppdlist.o: ppdpart.h ppdvertex.h ppdface.h ppdedge.h ppdnormal.h ppdloop.h
+ppdlist.o: oppd.h file.h veclib.h
+ppdloop.o: StdAfx.h smd.h /usr/include/stdio.h /usr/include/features.h
+ppdloop.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ppdloop.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ppdloop.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ppdloop.o: /usr/include/bits/types.h /usr/include/libio.h
+ppdloop.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+ppdloop.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+ppdloop.o: /usr/include/endian.h /usr/include/bits/endian.h
+ppdloop.o: /usr/include/sys/select.h /usr/include/bits/select.h
+ppdloop.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+ppdloop.o: /usr/include/alloca.h /usr/include/malloc.h ppdvertex.h ppdloop.h
+ppdnormal.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+ppdnormal.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ppdnormal.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+ppdnormal.o: /usr/include/bits/mathcalls.h
+ppdnormal.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+ppdnormal.o: smd.h /usr/include/stdio.h
+ppdnormal.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ppdnormal.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ppdnormal.o: /usr/include/bits/types.h /usr/include/libio.h
+ppdnormal.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+ppdnormal.o: /usr/include/stdlib.h /usr/include/sys/types.h
+ppdnormal.o: /usr/include/time.h /usr/include/endian.h
+ppdnormal.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+ppdnormal.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+ppdnormal.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+ppdnormal.o: /usr/include/malloc.h ppdvertex.h veclib.h
+ppdpart.o: StdAfx.h smd.h /usr/include/stdio.h /usr/include/features.h
+ppdpart.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ppdpart.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ppdpart.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ppdpart.o: /usr/include/bits/types.h /usr/include/libio.h
+ppdpart.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+ppdpart.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+ppdpart.o: /usr/include/endian.h /usr/include/bits/endian.h
+ppdpart.o: /usr/include/sys/select.h /usr/include/bits/select.h
+ppdpart.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+ppdpart.o: /usr/include/alloca.h /usr/include/malloc.h
+ppdsolid.o: StdAfx.h smd.h /usr/include/stdio.h /usr/include/features.h
+ppdsolid.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ppdsolid.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ppdsolid.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ppdsolid.o: /usr/include/bits/types.h /usr/include/libio.h
+ppdsolid.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+ppdsolid.o: /usr/include/stdlib.h /usr/include/sys/types.h
+ppdsolid.o: /usr/include/time.h /usr/include/endian.h
+ppdsolid.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+ppdsolid.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+ppdsolid.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+ppdsolid.o: /usr/include/malloc.h
+ppdvertex.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+ppdvertex.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ppdvertex.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+ppdvertex.o: /usr/include/bits/mathcalls.h
+ppdvertex.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+ppdvertex.o: smd.h /usr/include/stdio.h
+ppdvertex.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ppdvertex.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ppdvertex.o: /usr/include/bits/types.h /usr/include/libio.h
+ppdvertex.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+ppdvertex.o: /usr/include/stdlib.h /usr/include/sys/types.h
+ppdvertex.o: /usr/include/time.h /usr/include/endian.h
+ppdvertex.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+ppdvertex.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+ppdvertex.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+ppdvertex.o: /usr/include/malloc.h ppdvertex.h
+ps.o: StdAfx.h smd.h /usr/include/stdio.h /usr/include/features.h
+ps.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ps.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ps.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ps.o: /usr/include/bits/types.h /usr/include/libio.h /usr/include/_G_config.h
+ps.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+ps.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/endian.h
+ps.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+ps.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+ps.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+ps.o: /usr/include/malloc.h ps.h
+quadtree.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+quadtree.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+quadtree.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+quadtree.o: /usr/include/bits/mathcalls.h
+quadtree.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+quadtree.o: smd.h /usr/include/stdio.h
+quadtree.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+quadtree.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+quadtree.o: /usr/include/bits/types.h /usr/include/libio.h
+quadtree.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+quadtree.o: /usr/include/stdlib.h /usr/include/sys/types.h
+quadtree.o: /usr/include/time.h /usr/include/endian.h
+quadtree.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+quadtree.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+quadtree.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+quadtree.o: /usr/include/malloc.h quadtree.h intsec.h
+tile.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+tile.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+tile.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+tile.o: /usr/include/bits/mathcalls.h
+tile.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+tile.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+tile.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+tile.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+tile.o: /usr/include/bits/types.h /usr/include/libio.h
+tile.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+tile.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+tile.o: /usr/include/endian.h /usr/include/bits/endian.h
+tile.o: /usr/include/sys/select.h /usr/include/bits/select.h
+tile.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+tile.o: /usr/include/alloca.h /usr/include/malloc.h ppd.h ppdvertex.h
+tile.o: ppdedge.h ppdface.h ppdloop.h hestack.h tile.h
+hestack.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+hestack.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+hestack.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+hestack.o: /usr/include/bits/mathcalls.h
+hestack.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+hestack.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+hestack.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+hestack.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+hestack.o: /usr/include/bits/types.h /usr/include/libio.h
+hestack.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+hestack.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+hestack.o: /usr/include/endian.h /usr/include/bits/endian.h
+hestack.o: /usr/include/sys/select.h /usr/include/bits/select.h
+hestack.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+hestack.o: /usr/include/alloca.h /usr/include/malloc.h ppdvertex.h ppdface.h
+hestack.o: ppdedge.h veclib.h hestack.h
+sigproc.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+sigproc.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+sigproc.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+sigproc.o: /usr/include/bits/mathcalls.h
+sigproc.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+sigproc.o: smd.h /usr/include/stdio.h
+sigproc.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+sigproc.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+sigproc.o: /usr/include/bits/types.h /usr/include/libio.h
+sigproc.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+sigproc.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+sigproc.o: /usr/include/endian.h /usr/include/bits/endian.h
+sigproc.o: /usr/include/sys/select.h /usr/include/bits/select.h
+sigproc.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+sigproc.o: /usr/include/alloca.h /usr/include/malloc.h linbcg.h ppdvertex.h
+sigproc.o: ppdface.h veclib.h sigproc.h dspr.h
+smf.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+smf.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+smf.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+smf.o: /usr/include/bits/mathcalls.h
+smf.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h smd.h
+smf.o: /usr/include/stdio.h
+smf.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+smf.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+smf.o: /usr/include/bits/types.h /usr/include/libio.h
+smf.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+smf.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+smf.o: /usr/include/endian.h /usr/include/bits/endian.h
+smf.o: /usr/include/sys/select.h /usr/include/bits/select.h
+smf.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+smf.o: /usr/include/alloca.h /usr/include/malloc.h ppd.h ppdsolid.h ppdpart.h
+smf.o: ppdvertex.h ppdface.h ppdedge.h ppdnormal.h ppdloop.h oppd.h file.h
+smf.o: veclib.h
+veclib.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+veclib.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+veclib.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+veclib.o: /usr/include/bits/mathcalls.h
+veclib.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+veclib.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+veclib.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+veclib.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+veclib.o: /usr/include/bits/types.h /usr/include/libio.h
+veclib.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+veclib.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+veclib.o: /usr/include/endian.h /usr/include/bits/endian.h
+veclib.o: /usr/include/sys/select.h /usr/include/bits/select.h
+veclib.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+veclib.o: /usr/include/alloca.h /usr/include/malloc.h veclib.h
+intsec.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+intsec.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+intsec.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+intsec.o: /usr/include/bits/mathcalls.h
+intsec.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+intsec.o: smd.h /usr/include/stdio.h
+intsec.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+intsec.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+intsec.o: /usr/include/bits/types.h /usr/include/libio.h
+intsec.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+intsec.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+intsec.o: /usr/include/endian.h /usr/include/bits/endian.h
+intsec.o: /usr/include/sys/select.h /usr/include/bits/select.h
+intsec.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+intsec.o: /usr/include/alloca.h /usr/include/malloc.h veclib.h quadtree.h
+intsec.o: intsec.h
+params.o: StdAfx.h smd.h /usr/include/stdio.h /usr/include/features.h
+params.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+params.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+params.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+params.o: /usr/include/bits/types.h /usr/include/libio.h
+params.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+params.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+params.o: /usr/include/endian.h /usr/include/bits/endian.h
+params.o: /usr/include/sys/select.h /usr/include/bits/select.h
+params.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+params.o: /usr/include/alloca.h /usr/include/malloc.h params.h
+asp.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+asp.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+asp.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+asp.o: /usr/include/bits/mathcalls.h
+asp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+asp.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+asp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+asp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+asp.o: /usr/include/bits/types.h /usr/include/libio.h
+asp.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+asp.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+asp.o: /usr/include/endian.h /usr/include/bits/endian.h
+asp.o: /usr/include/sys/select.h /usr/include/bits/select.h
+asp.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+asp.o: /usr/include/alloca.h /usr/include/malloc.h ppdvertex.h ppdedge.h
+asp.o: ppdloop.h sgraph.h sgprique.h veclib.h mytime.h asp.h
+esp.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+esp.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+esp.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+esp.o: /usr/include/bits/mathcalls.h
+esp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+esp.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+esp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+esp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+esp.o: /usr/include/bits/types.h /usr/include/libio.h
+esp.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+esp.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+esp.o: /usr/include/endian.h /usr/include/bits/endian.h
+esp.o: /usr/include/sys/select.h /usr/include/bits/select.h
+esp.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+esp.o: /usr/include/alloca.h /usr/include/malloc.h screen.h tile.h
+esp.o: ppdvertex.h ppdloop.h veclib.h matlib.h intsec.h file.h mytime.h
+esp.o: esptree.h esp.h params.h ppdface.h
+esptree.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+esptree.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+esptree.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+esptree.o: /usr/include/bits/mathcalls.h
+esptree.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+esptree.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+esptree.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+esptree.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+esptree.o: /usr/include/bits/types.h /usr/include/libio.h
+esptree.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+esptree.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+esptree.o: /usr/include/endian.h /usr/include/bits/endian.h
+esptree.o: /usr/include/sys/select.h /usr/include/bits/select.h
+esptree.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+esptree.o: /usr/include/alloca.h /usr/include/malloc.h ppdvertex.h ppdface.h
+esptree.o: veclib.h esp.h esptree.h params.h
+sgprique.o: StdAfx.h smd.h /usr/include/stdio.h /usr/include/features.h
+sgprique.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+sgprique.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+sgprique.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+sgprique.o: /usr/include/bits/types.h /usr/include/libio.h
+sgprique.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+sgprique.o: /usr/include/stdlib.h /usr/include/sys/types.h
+sgprique.o: /usr/include/time.h /usr/include/endian.h
+sgprique.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+sgprique.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+sgprique.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+sgprique.o: /usr/include/malloc.h sgprique.h
+sgraph.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+sgraph.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+sgraph.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+sgraph.o: /usr/include/bits/mathcalls.h
+sgraph.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+sgraph.o: smd.h /usr/include/stdio.h
+sgraph.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+sgraph.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+sgraph.o: /usr/include/bits/types.h /usr/include/libio.h
+sgraph.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+sgraph.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+sgraph.o: /usr/include/endian.h /usr/include/bits/endian.h
+sgraph.o: /usr/include/sys/select.h /usr/include/bits/select.h
+sgraph.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+sgraph.o: /usr/include/alloca.h /usr/include/malloc.h screen.h tile.h
+sgraph.o: ppdedge.h sgraph.h veclib.h
+spm.o: StdAfx.h /usr/include/stdio.h /usr/include/features.h
+spm.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+spm.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+spm.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+spm.o: /usr/include/bits/types.h /usr/include/libio.h
+spm.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+spm.o: /usr/include/math.h /usr/include/bits/huge_val.h
+spm.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+spm.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+spm.o: /usr/include/assert.h smd.h /usr/include/stdlib.h
+spm.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/endian.h
+spm.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+spm.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+spm.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+spm.o: /usr/include/malloc.h tile.h ppd.h ppdlist.h ppdvertex.h ppdface.h
+spm.o: ppdedge.h veclib.h linbcg.h uvwsigproc.h floater.h umbrella.h remesh.h
+spm.o: cylspm.h spm.h
+remesh.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+remesh.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+remesh.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+remesh.o: /usr/include/bits/mathcalls.h
+remesh.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+remesh.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+remesh.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+remesh.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+remesh.o: /usr/include/bits/types.h /usr/include/libio.h
+remesh.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+remesh.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+remesh.o: /usr/include/endian.h /usr/include/bits/endian.h
+remesh.o: /usr/include/sys/select.h /usr/include/bits/select.h
+remesh.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+remesh.o: /usr/include/alloca.h /usr/include/malloc.h screen.h tile.h ppd.h
+remesh.o: ppdsolid.h ppdpart.h ppdlist.h ppdvertex.h ppdface.h ppdedge.h
+remesh.o: ppdloop.h veclib.h matlib.h linbcg.h intsec.h file.h mytime.h
+remesh.o: remesh.h
+spedprique.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+spedprique.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+spedprique.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+spedprique.o: /usr/include/bits/mathcalls.h
+spedprique.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+spedprique.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+spedprique.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+spedprique.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+spedprique.o: /usr/include/bits/types.h /usr/include/libio.h
+spedprique.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+spedprique.o: /usr/include/stdlib.h /usr/include/sys/types.h
+spedprique.o: /usr/include/time.h /usr/include/endian.h
+spedprique.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+spedprique.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+spedprique.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+spedprique.o: /usr/include/malloc.h spedprique.h
+ffwarp.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+ffwarp.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ffwarp.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+ffwarp.o: /usr/include/bits/mathcalls.h
+ffwarp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+ffwarp.o: /usr/include/assert.h /usr/include/stdlib.h
+ffwarp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+ffwarp.o: /usr/include/sys/types.h /usr/include/bits/types.h
+ffwarp.o: /usr/include/time.h /usr/include/endian.h
+ffwarp.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+ffwarp.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+ffwarp.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h smd.h
+ffwarp.o: /usr/include/stdio.h
+ffwarp.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+ffwarp.o: /usr/include/libio.h /usr/include/_G_config.h
+ffwarp.o: /usr/include/bits/stdio_lim.h /usr/include/malloc.h screen.h tile.h
+ffwarp.o: ppdvertex.h ppdedge.h ppdface.h intsec.h veclib.h ps.h linbcg.h
+ffwarp.o: spm.h spedprique.h ffwarp.h
+umbrella.o: StdAfx.h /usr/include/assert.h /usr/include/features.h
+umbrella.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h smd.h
+umbrella.o: /usr/include/stdio.h
+umbrella.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+umbrella.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+umbrella.o: /usr/include/bits/types.h /usr/include/libio.h
+umbrella.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+umbrella.o: /usr/include/stdlib.h /usr/include/sys/types.h
+umbrella.o: /usr/include/time.h /usr/include/endian.h
+umbrella.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+umbrella.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+umbrella.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+umbrella.o: /usr/include/malloc.h tile.h ppdvertex.h
+uvwsigproc.o: StdAfx.h smd.h /usr/include/stdio.h /usr/include/features.h
+uvwsigproc.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+uvwsigproc.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+uvwsigproc.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+uvwsigproc.o: /usr/include/bits/types.h /usr/include/libio.h
+uvwsigproc.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+uvwsigproc.o: /usr/include/stdlib.h /usr/include/sys/types.h
+uvwsigproc.o: /usr/include/time.h /usr/include/endian.h
+uvwsigproc.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+uvwsigproc.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+uvwsigproc.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+uvwsigproc.o: /usr/include/malloc.h tile.h veclib.h ppdvertex.h spm.h
+uvwsigproc.o: umbrella.h uvwsigproc.h
+floater.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+floater.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+floater.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+floater.o: /usr/include/bits/mathcalls.h
+floater.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+floater.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+floater.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+floater.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+floater.o: /usr/include/bits/types.h /usr/include/libio.h
+floater.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+floater.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+floater.o: /usr/include/endian.h /usr/include/bits/endian.h
+floater.o: /usr/include/sys/select.h /usr/include/bits/select.h
+floater.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+floater.o: /usr/include/alloca.h /usr/include/malloc.h ppdvertex.h ppdface.h
+floater.o: ppdedge.h tile.h veclib.h linbcg.h intsec.h floater.h
+cylspm.o: StdAfx.h /usr/include/stdio.h /usr/include/features.h
+cylspm.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+cylspm.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+cylspm.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+cylspm.o: /usr/include/bits/types.h /usr/include/libio.h
+cylspm.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+cylspm.o: /usr/include/math.h /usr/include/bits/huge_val.h
+cylspm.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+cylspm.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+cylspm.o: /usr/include/assert.h smd.h /usr/include/stdlib.h
+cylspm.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/endian.h
+cylspm.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+cylspm.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+cylspm.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+cylspm.o: /usr/include/malloc.h tile.h ppdvertex.h ppdface.h ppdedge.h
+cylspm.o: veclib.h linbcg.h floater.h cylspm.h
+tops.o: StdAfx.h /usr/include/math.h /usr/include/features.h
+tops.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+tops.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+tops.o: /usr/include/bits/mathcalls.h
+tops.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+tops.o: /usr/include/assert.h smd.h /usr/include/stdio.h
+tops.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+tops.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+tops.o: /usr/include/bits/types.h /usr/include/libio.h
+tops.o: /usr/include/_G_config.h /usr/include/bits/stdio_lim.h
+tops.o: /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h
+tops.o: /usr/include/endian.h /usr/include/bits/endian.h
+tops.o: /usr/include/sys/select.h /usr/include/bits/select.h
+tops.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+tops.o: /usr/include/alloca.h /usr/include/malloc.h screen.h tile.h ppd.h
+tops.o: ppdsolid.h ppdpart.h ppdlist.h ppdvertex.h ppdface.h ppdedge.h
+tops.o: ppdloop.h veclib.h matlib.h linbcg.h intsec.h file.h mytime.h
+tops.o: remesh.h ps.h
