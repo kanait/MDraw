@@ -22,7 +22,7 @@ This software uses MFC (Microsoft Foundation Class). Then, to compile this softw
 
 ## Authors
 
-* **Takashi Kanai(https://graphics.c.u-tokyo.ac.jp/)** - The University of Tokyo
+* **[Takashi Kanai](https://graphics.c.u-tokyo.ac.jp/)** - The University of Tokyo
 
 ## License
 
