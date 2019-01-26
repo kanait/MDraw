@@ -2,7 +2,10 @@
 // time.cxx
 // time measurement functions
 //
-// Copyright (c) 1997-1999 Takashi Kanai; All rights reserved. 
+// Copyright (c) 1997-1999 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #include "StdAfx.h"
@@ -63,7 +66,8 @@ void time_stop( void )
   double realtime, usertime, systime;
   double ct;
 
-  ct = (double) CLK_TCK;
+  //ct = (double) CLK_TCK;
+  ct = (double) CLOCKS_PER_SEC;
 
   real2 = times(&tbuf2);
   realtime = ((double) real2 - (double) real1) / ct;
@@ -81,7 +85,8 @@ void time_stop_value( double *realtime, double *usertime, double *systime )
   long  real2;
   double ct;
 
-  ct = (double) CLK_TCK;
+  //ct = (double) CLK_TCK;
+  ct = (double) CLOCKS_PER_SEC;
 
   real2 = times(&tbuf2);
   *realtime = ((double) real2 - (double) real1) / ct;

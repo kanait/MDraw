@@ -2,7 +2,10 @@
 // spedprique.cxx
 // Priority queue functions for ppd edge
 //
-// Copyright (c) 2000 Takashi Kanai; All rights reserved. 
+// Copyright (c) 2000 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #include "StdAfx.h"

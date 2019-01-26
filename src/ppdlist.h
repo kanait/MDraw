@@ -1,7 +1,10 @@
 //
 // ppdlist.h
 //
-// Copyright (c) 1997-1999 Takashi Kanai; All rights reserved. 
+// Copyright (c) 1997-1999 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #ifndef _PPDLIST_H

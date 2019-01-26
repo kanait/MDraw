@@ -1,3 +1,12 @@
+//
+// texture.h
+//
+// Copyright (c) 1999-2000 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
+//
+
 /*
  * read_texture() - read in an image file in SGI 'libimage' format
  * 	currently its very simple minded and converts all images

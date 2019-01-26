@@ -1,11 +1,12 @@
 //
 // spedprique.h
-//
-// Copyright (c) 2000 Takashi Kanai; All rights reserved. 
-//
-//
 // ppd edge priority queue (heap) structure
 // (used in ffwarp.cxx)
+//
+// Copyright (c) 2000 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #ifndef _SPEDPRIQUE_H

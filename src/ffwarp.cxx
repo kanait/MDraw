@@ -7,7 +7,10 @@
 //   "Foldover-Free Image Warping",
 //   Graphical Models and Image Processing, Vol.60, No.2, pp.100-111, 1998.
 //
-// Copyright (c) 2000 Takashi Kanai; All rights reserved. 
+// Copyright (c) 2000 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #include "StdAfx.h"

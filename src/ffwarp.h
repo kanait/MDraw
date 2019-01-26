@@ -2,7 +2,10 @@
 // fwarp.cxx
 // foldover-free mesh warping functions header
 //
-// Copyright (c) 2000 Takashi Kanai; All rights reserved. 
+// Copyright (c) 2000 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #ifndef _FFWARP_H

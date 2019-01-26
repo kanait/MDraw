@@ -1,7 +1,10 @@
 //
 // linbcg.h
-// from Numerical Recipes in C 
-// Copyright (c) 1997-1999 Takashi Kanai; All rights reserved. 
+//
+// Copyright (c) 1997-1999 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #ifndef _LINBCG_H

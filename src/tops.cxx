@@ -1,9 +1,10 @@
 //
-// ppd2ps.cxx
-// shape preserving mapping functions
-// based on Floater's CAGD paper
+// tops.cxx
 //
-// Copyright (c) 1999-2000 by Takashi Kanai; All rights reserved. 
+// Copyright (c) 1999-2000 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #include "StdAfx.h"

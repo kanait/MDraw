@@ -1,7 +1,10 @@
 //
 // esp.h
 //
-// Copyright (c) 1997-2000 Takashi Kanai; All rights reserved. 
+// Copyright (c) 1997-2000 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #ifndef _ESP_H

@@ -1,9 +1,11 @@
 //
 // sp.cxx
-//
 // main routine for calculating a shortest path.:
 //
-// Copyright (c) 1998-1999 Takashi Kanai; All rights reserved. 
+// Copyright (c) 1998-1999 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #ifdef _AFXDLL

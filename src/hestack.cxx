@@ -3,7 +3,10 @@
 //
 // Hestack functions for subdividing faces according to the path edge
 //
-// Copyright (c) 1999 Takashi Kanai; All rights reserved. 
+// Copyright (c) 1999 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #include "StdAfx.h"

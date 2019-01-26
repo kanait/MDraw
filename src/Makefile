@@ -71,7 +71,7 @@ linux:
 	$(MAKE) $(TARGET) \
 	"LDLIBS = -lm" \
 	"CXX = g++" \
-	"CXXFLAGS = -O2 -Wall" \
+	"CXXFLAGS = -O3 -Wall" \
 	"RANLIB = ranlib"
 
 linux-debug:

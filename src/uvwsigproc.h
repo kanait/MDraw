@@ -1,7 +1,10 @@
 //
 // uvwsigproc.h
 //
-// Copyright (c) 2000 Takashi Kanai; All rights reserved. 
+// Copyright (c) 1998 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #ifndef _UVWSIGPROC_H

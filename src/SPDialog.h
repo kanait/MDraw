@@ -1,3 +1,12 @@
+//
+// SPDialog.h
+//
+// Copyright (c) 1998-1999 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
+//
+
 #if !defined(AFX_SPDIALOG_H__61649A10_47BC_11D2_AB66_00E029217E15__INCLUDED_)
 #define AFX_SPDIALOG_H__61649A10_47BC_11D2_AB66_00E029217E15__INCLUDED_
 

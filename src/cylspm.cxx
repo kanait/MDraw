@@ -2,7 +2,10 @@
 // cylspm.cxx
 // shape preserving cylindrical mapping functions
 //
-// Copyright (c) 2000 by Takashi Kanai; All rights reserved. 
+// Copyright (c) 2000 by Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #include "StdAfx.h"

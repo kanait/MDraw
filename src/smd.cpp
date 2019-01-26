@@ -1,7 +1,10 @@
 //
 // smd.cpp
 //
-// Copyright (c) 1997-1998 by Takashi Kanai; All rights reserved. 
+// Copyright (c) 1997-1998 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
 //
 
 #include "stdafx.h"

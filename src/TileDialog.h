@@ -1,11 +1,18 @@
+//
+// TileDialog.h
+//
+// Copyright (c) 1998-1999 Takashi Kanai
+//
+// This software is released under the MIT License.
+// http://opensource.org/licenses/mit-license.php
+//
+
 #if !defined(AFX_TILEDIALOG_H__86FEEB01_9E4D_11D3_8824_0800690F3984__INCLUDED_)
 #define AFX_TILEDIALOG_H__86FEEB01_9E4D_11D3_8824_0800690F3984__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-// TileDialog.h : ヘッダー ファイル
-//
 
 /////////////////////////////////////////////////////////////////////////////
 // CTileDialog ダイアログ
