@@ -25,7 +25,9 @@
 #include "ppdnormal.h"
 #include "ppdloop.h"
 #include "smf.h"
+#if 0
 #include "mdw.h"
+#endif
 #include "file.h"
 #include "hidden.h"
 #include "esp.h"

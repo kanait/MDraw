@@ -18,7 +18,7 @@ static char THIS_FILE[] = __FILE__;
 #include "smd.h"
 #include "screen.h"
 #include "draw.h"
-#include "tile.h"
+//#include "tile.h"
 
 #ifndef _COLOR_H
 #include "color.h"
@@ -79,7 +79,7 @@ void screenatr_initialize( ScreenAtr *screen, int width, int height )
   screen->view_ppd = (Sppd *) NULL;
 
   // for current tile
-  screen->current_tile = (Tile *) NULL;
+  //  screen->current_tile = (Tile *) NULL;
 
   // for shortest-path
   screen->view_sg   = (SGraph *) NULL;

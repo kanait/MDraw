@@ -22,14 +22,18 @@ static char THIS_FILE[] = __FILE__;
 #include "pick.h"
 
 #include "ppdvertex.h"
+#if 0
 #include "tile.h"
+#endif
 
 #include "sellist.h"
 #include "intsec.h"
 #include "veclib.h"
 
 #include "resource.h"
+#if 0
 #include "TileDialog.h"
+#endif
 
 static unsigned short pick_vertex=0;
 
@@ -42,11 +46,11 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
   Spvt *vt = NULL;
   Splp *lp = NULL;
   Spfc *fc = NULL;
-  TEdge *ted = NULL;
+  //  TEdge *ted = NULL;
   int id = SMDNULL;
 
   Sppd *ppd = screen->current_ppd;
-  Tile *tile = screen->current_tile;
+  //  Tile *tile = screen->current_tile;
 
   if ( ppd == NULL ) return FALSE;
 
@@ -421,6 +425,7 @@ Splp *pick_ppdloop_screen( int x, int y, ScreenAtr *screen, Sppd *ppd )
   return rlp;
 }
 
+#if 0
 TEdge *pick_tedge_screen( int x, int y, ScreenAtr *screen, Tile *tile )
 {
   if ( tile == NULL ) return NULL;
@@ -475,6 +480,7 @@ TEdge *pick_tedge_screen( int x, int y, ScreenAtr *screen, Tile *tile )
 	
   return rted;
 }
+#endif
 
 static BOOL point_in_ppdface( Spfc *, double, double, ScreenAtr * );
 

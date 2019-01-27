@@ -23,8 +23,8 @@ static char THIS_FILE[] = __FILE__;
 #include "ppd.h"
 #include "sgraph.h"
 
-#include "tile.h"
-#include "remesh.h"
+//#include "tile.h"
+//#include "remesh.h"
 
 #include "params.h"
 
@@ -32,7 +32,7 @@ static char THIS_FILE[] = __FILE__;
 #include "color.h"
 #endif
 
-#include "spm.h"
+//#include "spm.h"
 
 Params params;
 
@@ -68,13 +68,13 @@ Swin *create_swin( void )
   swin->edit_type   = EDIT_NONE;
 
   // parameterization type
-  swin->param_type = SP_TPWEIGHT;
+  // swin->param_type = SP_TPWEIGHT;
     
   // re-calc parameterization (used in "Remesh")
-  swin->recalc_param = FALSE;
+  // swin->recalc_param = FALSE;
 
   // parameter correction type (used in "Remesh")
-  swin->paramcorr_type = DIFF_GEODIS;
+  // swin->paramcorr_type = DIFF_GEODIS;
   
   // save harmonic map to ps 
   swin->isSaveHMtoPS = FALSE;

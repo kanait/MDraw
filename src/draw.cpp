@@ -31,7 +31,9 @@ static char THIS_FILE[] = __FILE__;
 #include "texture.h"
 #include "draw.h"
 #include "glppd.h"
+#if 0
 #include "gltile.h"
+#endif
 
 #include "color.h"
 #include "light.h"
@@ -493,6 +495,7 @@ static void drawselectarea(ScreenAtr *screen)
   ::glPopMatrix();
 }
 
+#if 0
 static void drawtile( Tile *tile, ScreenAtr *screen )
 {
   // tile edge
@@ -513,7 +516,8 @@ static void drawtile( Tile *tile, ScreenAtr *screen )
   //
   draw_tile_tface_boundary( tile, screen );
 }
-  
+#endif
+
 static void drawppd( Sppd *ppd, ScreenAtr *screen )
 {
   // vertex
@@ -576,11 +580,13 @@ void draws3d( ScreenAtr *screen )
     draw3dcoaxis( screen );
   }
 
+#if 0
   // display file
   if ( screen->current_tile != (Tile *) NULL ) {
     drawtile( screen->current_tile, screen );
   }
-  
+#endif
+
   // display ppd
   if ( screen->view_ppd != (Sppd *) NULL ) {
     drawppd( screen->view_ppd, screen );

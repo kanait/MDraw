@@ -17,7 +17,9 @@ extern Spvt *pick_ppdvertex_spath_screen( int, int, ScreenAtr *, Sppd * );
 extern Spvt *pick_ppdvertex_screen_area( int, int, int, int, ScreenAtr *, Sppd * );
 extern Splp *pick_ppdloop_screen( int, int, ScreenAtr *, Sppd * );
 extern Spfc *pick_ppdface_screen( int, int, ScreenAtr *, Sppd * );
+#if 0
 extern TEdge *pick_tedge_screen( int, int, ScreenAtr *, Tile * );
+#endif
 extern int pick_tface_ppd_screen( int, int, ScreenAtr *, Sppd * );
 //extern HVertex *pick_hvertex_screen( int, int, ScreenAtr *, HPpd * );
 //extern HVertex *pick_hvertex_screen_area( int, int, ScreenAtr *, HPpd * );

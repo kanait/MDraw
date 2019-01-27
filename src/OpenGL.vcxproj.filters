@@ -27,9 +27,6 @@
     <ClCompile Include="draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dspr.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="edit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -126,9 +123,6 @@
     <ClCompile Include="QuitDialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="remesh.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="screen.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -185,9 +179,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="draw.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dspr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="edit.h">
@@ -290,9 +281,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QuitDialog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="remesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">

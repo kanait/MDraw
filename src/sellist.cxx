@@ -17,7 +17,9 @@ static char THIS_FILE[] = __FILE__;
 
 #include "smd.h"
 #include "screen.h"
+#if 0
 #include "tile.h"
+#endif
 
 //
 // SelList Functions 
@@ -42,8 +44,8 @@ static SelList *create_sellist( ScreenAtr *screen )
   sl->vt  = NULL;
   sl->fc  = NULL;
   sl->lp  = NULL;
-  sl->ted = NULL;
-  sl->tf  = NULL;
+  //sl->ted = NULL;
+  //sl->tf  = NULL;
   
   ++(screen->n_sellist);
 
@@ -70,33 +72,36 @@ void free_sellist(SelList *sl, ScreenAtr *screen)
     lp->col = LOOPBLUE;
   }
 
+#if 0
   TEdge *ted;
   if ( (ted = sl->ted) != NULL ) {
     ted->lp->col = LOOPBLUE;
   }
-
+#endif
+#if 0
   TFace *tf;
   if ( (tf = sl->tf) != NULL ) {
     tf->col = FACEBLUE;
   }
+#endif
 
   // cut links
   if ( screen->sel_first == sl ) {
-    
+
     if ( (screen->sel_first = sl->nxt) != (SelList *) NULL )
       sl->nxt->prv = (SelList *) NULL;
     else screen->sel_last = (SelList *) NULL;
-    
+
   } else if ( screen->sel_last == sl ) {
-    
+
     sl->prv->nxt = (SelList *) NULL;
     screen->sel_last = sl->prv;
-    
+
   } else {
-    
+
     sl->prv->nxt = sl->nxt;
     sl->nxt->prv = sl->prv;
-    
+
   }
 
   free( sl );
@@ -152,6 +157,7 @@ SelList *create_selectlist_lp( ScreenAtr * screen, Splp *lp )
   return sl;
 }
 
+#if 0
 // create select list ( tile edge )
 SelList *create_selectlist_tedge( ScreenAtr *screen, TEdge *ted )
 {
@@ -168,7 +174,9 @@ SelList *create_selectlist_tedge( ScreenAtr *screen, TEdge *ted )
 
   return sl;
 }
+#endif
 
+#if 0
 // create select list ( tile edge )
 SelList *create_selectlist_tface( ScreenAtr *screen, TFace *tf )
 {
@@ -185,6 +193,7 @@ SelList *create_selectlist_tface( ScreenAtr *screen, TFace *tf )
 
   return sl;
 }
+#endif
 
 SelList *list_selectlist(ScreenAtr * screen, Id id)
 {
@@ -197,15 +206,17 @@ SelList *list_selectlist(ScreenAtr * screen, Id id)
   return (SelList *) NULL;
 }
 
+#if 0
 SelList *list_selectlist_tfc( ScreenAtr* screen, TFace* tfc )
 {
   for ( SelList* sl = screen->sel_first; sl != NULL; sl = sl->nxt )
     {
       if ( sl->tf == tfc )
-	return sl;
+        return sl;
     }
   return NULL;
 }
+#endif
 
 void FreeSelectList( ScreenAtr *screen )
 {

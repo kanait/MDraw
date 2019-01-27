@@ -22,7 +22,9 @@ static char THIS_FILE[] = __FILE__;
 
 #include "smd.h"
 #include "screen.h"
+#if 0
 #include "tile.h"
+#endif
 #include "ppdlist.h"
 #include "ppdpart.h"
 #include "ppdvertex.h"
@@ -31,10 +33,12 @@ static char THIS_FILE[] = __FILE__;
 #include "ppdloop.h"
 #include "esp.h"
 #include "asp.h"
+#if 0
 #include "linbcg.h"
 #include "spm.h"
 #include "floater.h"
 #include "uvwsigproc.h"
+#endif
 #include "sgraph.h"
 
 #include "sellist.h"

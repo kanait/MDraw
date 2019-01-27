@@ -138,7 +138,6 @@
     <ClCompile Include="bitmap.cpp" />
     <ClCompile Include="dialog.cpp" />
     <ClCompile Include="draw.cpp" />
-    <ClCompile Include="dspr.cxx" />
     <ClCompile Include="edit.cpp" />
     <ClCompile Include="esp.cxx" />
     <ClCompile Include="esptree.cxx" />
@@ -171,7 +170,6 @@
     <ClCompile Include="ps.cxx" />
     <ClCompile Include="quadtree.cxx" />
     <ClCompile Include="QuitDialog.cpp" />
-    <ClCompile Include="remesh.cxx" />
     <ClCompile Include="screen.cxx" />
     <ClCompile Include="sellist.cxx" />
     <ClCompile Include="sgprique.cxx" />
@@ -199,7 +197,6 @@
     <ClInclude Include="color.h" />
     <ClInclude Include="dialog.h" />
     <ClInclude Include="draw.h" />
-    <ClInclude Include="dspr.h" />
     <ClInclude Include="edit.h" />
     <ClInclude Include="esp.h" />
     <ClInclude Include="esplist.h" />
@@ -234,7 +231,6 @@
     <ClInclude Include="ps.h" />
     <ClInclude Include="quadtree.h" />
     <ClInclude Include="QuitDialog.h" />
-    <ClInclude Include="remesh.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="screen.h" />
     <ClInclude Include="sellist.h" />

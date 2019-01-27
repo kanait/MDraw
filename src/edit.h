@@ -20,6 +20,8 @@ extern Splp *create_closedloop( ScreenAtr* );
 
 extern BOOL create_tile_cylindrical_face( ScreenAtr* );
 extern BOOL two_loop_connect_check( ScreenAtr*, int* );
+#if 0
 extern void create_two_closedloop( ScreenAtr*, TFace* );
+#endif
 
 #endif // _EDIT_H

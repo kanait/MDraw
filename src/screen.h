@@ -258,13 +258,13 @@ typedef struct _swin {
   int path_type;
 
   // parameter type (used in "Make Face")
-  int param_type;
+  //  int param_type;
 
   // re-calc parameterization (used in "Remesh")
-  BOOL recalc_param;
+  //BOOL recalc_param;
 
   // parameter correction type
-  int paramcorr_type;
+  //int paramcorr_type;
   
   // window dependent parameters
   ScreenAtr screenatr;
