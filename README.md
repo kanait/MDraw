@@ -10,7 +10,7 @@ Takashi Kanai, Hiromasa Suzuki:
 "Approximate Shortest Path on a Polyhedral Surface Based on Selective Refinement of the Discrete Graph and Its Applications",
 Proc. Geometric Modeling and Processing 2000, pp.241-250, IEEE CS Press, Los Alamitos, CA, April 2000.
 
-This software was originally created in 1997-1999 and was renovated in 2016 so as to build successfully by Visual Studio 2015 (VS2015).
+This software was originally developed in 1997-2000 and was renovated in 2016 so as to build successfully by Visual Studio 2015 (VS2015).
 
 ## Getting Started
 
