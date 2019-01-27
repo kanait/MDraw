@@ -136,27 +136,22 @@
   <ItemGroup>
     <ClCompile Include="Asp.cxx" />
     <ClCompile Include="bitmap.cpp" />
-    <ClCompile Include="cylspm.cxx" />
     <ClCompile Include="dialog.cpp" />
     <ClCompile Include="draw.cpp" />
     <ClCompile Include="dspr.cxx" />
     <ClCompile Include="edit.cpp" />
     <ClCompile Include="esp.cxx" />
     <ClCompile Include="esptree.cxx" />
-    <ClCompile Include="ffwarp.cxx" />
     <ClCompile Include="file.cxx" />
-    <ClCompile Include="floater.cxx" />
     <ClCompile Include="glppd.cpp" />
     <ClCompile Include="gltile.cpp" />
     <ClCompile Include="hestack.cxx" />
     <ClCompile Include="hidden.cpp" />
     <ClCompile Include="intsec.cxx" />
-    <ClCompile Include="linbcg.cxx" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="MaterialDialog.cpp" />
     <ClCompile Include="matlib.cxx" />
-    <ClCompile Include="mdw.cxx" />
     <ClCompile Include="MeshInfoDialog.cpp" />
     <ClCompile Include="mytime.cxx" />
     <ClCompile Include="OpenGL.cpp" />
@@ -182,12 +177,10 @@
     <ClCompile Include="sellist.cxx" />
     <ClCompile Include="sgprique.cxx" />
     <ClCompile Include="sgraph.cxx" />
-    <ClCompile Include="sigproc.cxx" />
     <ClCompile Include="smd.cpp" />
     <ClCompile Include="smf.cxx" />
     <ClCompile Include="SPDialog.cpp" />
     <ClCompile Include="spedprique.cxx" />
-    <ClCompile Include="spm.cxx" />
     <ClCompile Include="SRDialog.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -196,11 +189,6 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="texture.cxx" />
-    <ClCompile Include="tfcremesh.cxx" />
-    <ClCompile Include="tile.cxx" />
-    <ClCompile Include="TileDialog.cpp" />
-    <ClCompile Include="umbrella.cxx" />
-    <ClCompile Include="uvwsigproc.cxx" />
     <ClCompile Include="veclib.cxx" />
   </ItemGroup>
   <ItemGroup>
@@ -210,7 +198,6 @@
     <ClInclude Include="Asp.h" />
     <ClInclude Include="Bitmap.h" />
     <ClInclude Include="color.h" />
-    <ClInclude Include="cylspm.h" />
     <ClInclude Include="dialog.h" />
     <ClInclude Include="draw.h" />
     <ClInclude Include="dspr.h" />
@@ -218,20 +205,16 @@
     <ClInclude Include="esp.h" />
     <ClInclude Include="esplist.h" />
     <ClInclude Include="esptree.h" />
-    <ClInclude Include="ffwarp.h" />
     <ClInclude Include="file.h" />
-    <ClInclude Include="floater.h" />
     <ClInclude Include="glppd.h" />
     <ClInclude Include="gltile.h" />
     <ClInclude Include="hestack.h" />
     <ClInclude Include="hidden.h" />
     <ClInclude Include="intsec.h" />
-    <ClInclude Include="linbcg.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialDialog.h" />
     <ClInclude Include="matlib.h" />
-    <ClInclude Include="mdw.h" />
     <ClInclude Include="MeshInfoDialog.h" />
     <ClInclude Include="mtl.h" />
     <ClInclude Include="mytime.h" />
@@ -259,21 +242,14 @@
     <ClInclude Include="sellist.h" />
     <ClInclude Include="sgprique.h" />
     <ClInclude Include="sgraph.h" />
-    <ClInclude Include="sigproc.h" />
     <ClInclude Include="smd.h" />
     <ClInclude Include="smdsrc.h" />
     <ClInclude Include="smf.h" />
     <ClInclude Include="SPDialog.h" />
     <ClInclude Include="spedprique.h" />
-    <ClInclude Include="spm.h" />
     <ClInclude Include="SRDialog.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="texture.h" />
-    <ClInclude Include="tfcremesh.h" />
-    <ClInclude Include="tile.h" />
-    <ClInclude Include="TileDialog.h" />
-    <ClInclude Include="umbrella.h" />
-    <ClInclude Include="uvwsigproc.h" />
     <ClInclude Include="veclib.h" />
   </ItemGroup>
   <ItemGroup>

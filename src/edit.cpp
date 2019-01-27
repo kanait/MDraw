@@ -166,6 +166,7 @@ BOOL asp_create_spath( ScreenAtr *screen )
   return TRUE;
 }
 
+#if 0
 //
 // create tile face (GUI connected routine)
 //
@@ -279,7 +280,9 @@ BOOL create_tile_face( ScreenAtr *screen )
   
   return TRUE;
 }
+#endif
 
+#if 0
 void tedge_lp_to_screen( Splp* lp, ScreenAtr* screen )
 {
   for ( Splv* lv = lp->splv; lv != NULL; lv = lv->nxt )
@@ -291,7 +294,9 @@ void tedge_lp_to_screen( Splp* lp, ScreenAtr* screen )
 	}
     }
 }
-  
+#endif
+
+#if 0
 BOOL loop_connect_check( ScreenAtr *screen )
 {
   for ( SelList *sl = screen->sel_first; sl != NULL; sl = sl->nxt ) {
@@ -307,7 +312,9 @@ BOOL loop_connect_check( ScreenAtr *screen )
   }
   return TRUE;
 }
+#endif
 
+#if 0
 Splp *create_closedloop( ScreenAtr *screen )
 {
   display("in create_closed_loop\n");
@@ -363,7 +370,9 @@ Splp *create_closedloop( ScreenAtr *screen )
   
   return clp;
 }
+#endif
 
+#if 0
 //
 // create tile cylindrical_face (GUI connected routine)
 //
@@ -430,7 +439,9 @@ BOOL create_tile_cylindrical_face( ScreenAtr *screen )
   
   return TRUE;
 }
+#endif
 
+#if 0
 //
 // for cylindrical_face
 //
@@ -532,7 +543,9 @@ BOOL two_loop_connect_check( ScreenAtr *screen, int* num_edges_per_loop )
   // ¬Œ÷II
   return TRUE;
 }
+#endif
 
+#if 0
 void create_two_closedloop( ScreenAtr *screen, TFace *tfc )
 {
   display("in two create_closed_loop\n");
@@ -622,3 +635,4 @@ void create_two_closedloop( ScreenAtr *screen, TFace *tfc )
       display("(closed 2) lv %d vt %d type %d\n", a->no, a->vt->no, a->type  );
     }
 }
+#endif

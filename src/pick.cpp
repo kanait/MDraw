@@ -33,7 +33,9 @@ static char THIS_FILE[] = __FILE__;
 
 static unsigned short pick_vertex=0;
 
+#if 0
 extern CTileDialog *td;
+#endif
 
 BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
 {
@@ -45,15 +47,15 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
 
   Sppd *ppd = screen->current_ppd;
   Tile *tile = screen->current_tile;
-	
+
   if ( ppd == NULL ) return FALSE;
-	
+
   switch ( edit_mode ) {
-		
+
   case EDIT_CREATE_SPATH:
 
     if ( screen->n_sellist == 2 ) return FALSE;
-		
+
     if ( (vt = pick_ppdvertex_screen( x, y, screen, ppd )) == NULL ) {
       return FALSE;
     }
@@ -63,7 +65,7 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
     create_selectlist_vt( screen, vt );
 
     return TRUE;
-		
+#if 0
   case EDIT_MAKE_LINES:
     
     if ( (vt = pick_ppdvertex_screen( x, y, screen, ppd )) == NULL ) {
@@ -78,26 +80,28 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
     char string[BUFSIZ];
     sprintf( string, "vertex No.%d", vt->no );
     td->ListInsertString( screen->n_sellist - 1, string );
-    
-    return TRUE;
 
+    return TRUE;
+#endif
+#if 0
   case EDIT_DEL_LINES:
-    
+
     // tile edge にする
     if ( (ted = pick_tedge_screen( x, y, screen, tile )) == NULL ) {
       return FALSE;
     }
     if ( ted->lp->col == LOOPRED ) return FALSE;
-		
+
     //FreeSelectList( screen );
     create_selectlist_tedge( screen, ted );
 
     //char string[BUFSIZ];
     sprintf( string, "tedge No.%d", ted->no );
     td->ListInsertString( screen->n_sellist - 1, string );
-		
-    return TRUE;
 
+    return TRUE;
+#endif
+#if 0
   case EDIT_MAKE_TILE_FACES:
 
     // tile edge にする
@@ -105,16 +109,17 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
       return FALSE;
     }
     if ( ted->lp->col == LOOPRED ) return FALSE;
-		
+
     //FreeSelectList( screen );
     create_selectlist_tedge( screen, ted );
 
     //char string[BUFSIZ];
     sprintf( string, "tedge No.%d", ted->no );
     td->ListInsertString( screen->n_sellist - 1, string );
-    
-    return TRUE;
 
+    return TRUE;
+#endif
+#if 0
   case EDIT_MAKE_TILE_CYL_FACES:
 
     // tile edge にする
@@ -122,15 +127,16 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
       return FALSE;
     }
     if ( ted->lp->col == LOOPRED ) return FALSE;
-		
+
     create_selectlist_tedge( screen, ted );
 
     //char string[BUFSIZ];
     sprintf( string, "tedge No.%d", ted->no );
     td->ListInsertString( screen->n_sellist - 1, string );
-    
-    return TRUE;
 
+    return TRUE;
+#endif
+#if 0
   case EDIT_REMESH:
 
 //      // 一つだけしか選択できない
@@ -151,29 +157,30 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
     // すでに選択されている場合は，選択をはずす (トグルボタン形式)
     if ( tf->col == FACEBLUE )
       {
-    
-	//display("selected. id %d\n", id );
-	create_selectlist_tface( screen, tf );
 
-	// tface の属性設定
-	td->set_selected_tile_txt( id );
-	td->set_remesh_ndiv( tf->ndiv );
-	td->set_remesh_combo_cursel( tf->tptype );
-	if ( tf->cv != NULL ) {
-	  td->set_selected_center_vertex_txt( tf->cv->no );
-	} else {
-	  td->clear_selected_center_vertex_txt();
-	}
+        //display("selected. id %d\n", id );
+        create_selectlist_tface( screen, tf );
+
+        // tface の属性設定
+        td->set_selected_tile_txt( id );
+        td->set_remesh_ndiv( tf->ndiv );
+        td->set_remesh_combo_cursel( tf->tptype );
+        if ( tf->cv != NULL ) {
+          td->set_selected_center_vertex_txt( tf->cv->no );
+        } else {
+          td->clear_selected_center_vertex_txt();
+        }
       }
 
     else
       {
-	SelList *sl = list_selectlist_tfc( screen, tf );
-	if ( sl != NULL ) free_sellist( sl, screen );
+        SelList *sl = list_selectlist_tfc( screen, tf );
+        if ( sl != NULL ) free_sellist( sl, screen );
       }
 
     return TRUE;
-
+#endif
+#if 0
   case EDIT_SEL_CVERTEX:
 
     // 一つだけしか選択できない
@@ -182,44 +189,44 @@ BOOL edit_pick( int x, int y, int edit_mode, ScreenAtr *screen )
     }
 
     vt->col = PNTBLUE;
-    
+
     td->set_center_vertex( vt );
     td->set_selected_center_vertex_txt( vt->no );
     td->reset_edit_type();
-    
+
     return TRUE;
-		
-      
+#endif
+
   default:
     break;
   }
-   
+
   return FALSE;
 }
 
 BOOL edit_pick_area( int bx, int by, int ex, int ey,
-		     int edit_mode, ScreenAtr *screen )
+                     int edit_mode, ScreenAtr *screen )
 {
   Spvt *vt = NULL;
   Sppd *ppd = screen->current_ppd;
-	
+
   if ( ppd == NULL ) return FALSE;
-	
+
   switch ( edit_mode ) {
-		
+
   case EDIT_CREATE_SPATH:
     if ( (vt = pick_ppdvertex_screen_area( bx, by, ex, ey, screen, ppd )) == NULL ) {
       return FALSE;
     }
     if ( vt->col == PNTRED ) return FALSE;
-		
+
     FreeSelectList( screen );
-		
+
     vt->col = PNTRED;
     create_selectlist_vt( screen, vt );
     return TRUE;
   }
-		
+
   return FALSE;
 }
 
@@ -231,11 +238,11 @@ BOOL edit_pick_area( int bx, int by, int ex, int ey,
 
 static BOOL pick_on_point( double x, double y, double ix, double iy, double *dis )
 {
-	
+
   double subx, suby;
-	
+
   subx = x - ix; suby = y - iy;
-	
+
   if ( (fabs( subx ) < PICKPOINTSIZE) &&
        (fabs( suby ) < PICKPOINTSIZE) ) {
     *dis = sqrt(subx*subx+suby*suby);
@@ -247,7 +254,7 @@ static BOOL pick_on_point( double x, double y, double ix, double iy, double *dis
 Spvt *pick_ppdvertex_screen( int x, int y, ScreenAtr *screen, Sppd *ppd )
 {
   if ( ppd == (Sppd *) NULL ) return (Spvt *) NULL;
-	
+
   get_GL_attributes( screen );
 
   // added 99/01/21
@@ -256,41 +263,41 @@ Spvt *pick_ppdvertex_screen( int x, int y, ScreenAtr *screen, Sppd *ppd )
 
   double ix = (double) x;
   double iy = (double) screen->viewport[3] - (double) y;
-	
+
   int cnt = 0;
   Spvt *pvt = NULL;
-	
+
   double dis, dis0;
-  Spfc	 *f;
+  Spfc *f;
   for ( f = ppd->spfc; f != (Spfc *) NULL; f = f->nxt ) {
 
     if ( V3Dot( &eye, &(f->nrm) ) < 0.0 ) continue;
-    
+
     Sphe *he = f->sphe;
     do {
       Spvt* v = he->vt;
       Vec2d win2;
       world_to_win( &(v->vec), &(win2), screen->mmat, screen->pmat, 
-		    screen->viewport );
+                    screen->viewport );
       // pick.
       if ( pick_on_point( win2.x, win2.y, ix, iy, &dis ) == TRUE ) {
-//  	display("in.\n");
-	if ( cnt ) {
-	  if ( dis < dis0 ) {
-	    dis0 = dis;
-	    pvt  = v;
-	    ++cnt;
-	  }
-	} else {
-	  dis0 = dis;
-	  pvt  = v;
-	  ++cnt;
-	}
+//  display("in.\n");
+        if ( cnt ) {
+          if ( dis < dis0 ) {
+            dis0 = dis;
+            pvt  = v;
+            ++cnt;
+          }
+        } else {
+          dis0 = dis;
+          pvt  = v;
+          ++cnt;
+        }
       }
-			
+
     } while ( (he = he->nxt) != f->sphe );
   }
-	
+
   return pvt;
 }
 
@@ -299,7 +306,7 @@ static int sc_in_area(Vec2d * vec, Vec2d * org, Vec2d * atv)
   if ((vec->x >= org->x) && (vec->x <= atv->x) &&
       (vec->y <= org->y) && (vec->y >= atv->y))
     return SMD_ON;
-	
+
   return SMD_OFF;
 }
 

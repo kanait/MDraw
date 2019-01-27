@@ -165,10 +165,12 @@ Material *material_initialize( void )
 
 void swin_free_ppd( Swin *swin )
 {
+#if 0
   // free currnt_tile
   if ( swin->screenatr.current_tile != (Tile *) NULL ) 
     free_tile( swin->screenatr.current_tile );
-  
+#endif
+
   // free current ppd
   if ( swin->screenatr.current_ppd != (Sppd *) NULL ) {
     Sppd *ppd = swin->screenatr.current_ppd;

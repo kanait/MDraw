@@ -21,9 +21,6 @@
     <ClCompile Include="bitmap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cylspm.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -42,13 +39,7 @@
     <ClCompile Include="esptree.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ffwarp.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="file.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="floater.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="glppd.cpp">
@@ -66,9 +57,6 @@
     <ClCompile Include="intsec.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="linbcg.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MainFrm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -79,9 +67,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="matlib.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mdw.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MeshInfoDialog.cpp">
@@ -159,9 +144,6 @@
     <ClCompile Include="sgraph.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sigproc.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="smd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -174,9 +156,6 @@
     <ClCompile Include="spedprique.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="spm.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SRDialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -184,21 +163,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="texture.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tfcremesh.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tile.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TileDialog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="umbrella.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="uvwsigproc.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="veclib.cxx">
@@ -218,9 +182,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="color.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cylspm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="dialog.h">
@@ -244,13 +205,7 @@
     <ClInclude Include="esptree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ffwarp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="file.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="floater.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="glppd.h">
@@ -268,9 +223,6 @@
     <ClInclude Include="intsec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="linbcg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MainFrm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -281,9 +233,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="matlib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mdw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MeshInfoDialog.h">
@@ -367,9 +316,6 @@
     <ClInclude Include="sgraph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sigproc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="smd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -385,9 +331,6 @@
     <ClInclude Include="spedprique.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="spm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SRDialog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -395,21 +338,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tfcremesh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TileDialog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="umbrella.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="uvwsigproc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="veclib.h">

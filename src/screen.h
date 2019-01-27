@@ -164,9 +164,11 @@ typedef struct _screenatr {
   Sppd          *current_ppd;
   Sppd          *view_ppd;
 
+#if 0
   // current_tile
   Tile          *current_tile;
-  
+#endif
+
   // radius of sphere and cylinder for displaying
   double	rad_sph, rad_cyl;
 

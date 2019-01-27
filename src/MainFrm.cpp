@@ -78,9 +78,9 @@ IMPLEMENT_DYNCREATE(CMainFrame, CFrameWnd)
   ON_COMMAND(ID_FILE_OPEN_VW, OnFileOpenVw)
   ON_COMMAND(ID_FILE_SAVE_VW, OnFileSaveVw)
   ON_COMMAND(ID_MENU_SPATH_CREATE, OnMenuSpathCreate)
-  ON_COMMAND(ID_MENU_EDIT_TILE, OnMenuEditTile)
+//  ON_COMMAND(ID_MENU_EDIT_TILE, OnMenuEditTile)
   ON_COMMAND(ID_VIEW_MATERIAL, OnViewMaterial)
-  ON_COMMAND(ID_MENU_FAIRING_SP, OnMenuFairingSp)
+//  ON_COMMAND(ID_MENU_FAIRING_SP, OnMenuFairingSp)
   ON_COMMAND(ID_MESH_INFO, OnMeshInfo)
   ON_COMMAND(ID_VIEW_GRADIENT, OnViewGradient)
   ON_UPDATE_COMMAND_UI(ID_VIEW_GRADIENT, OnUpdateViewGradient)
@@ -94,9 +94,9 @@ IMPLEMENT_DYNCREATE(CMainFrame, CFrameWnd)
   ON_UPDATE_COMMAND_UI(ID_MENU_SCREEN_LIGHT3, OnUpdateMenuScreenLight3)
   ON_COMMAND(ID_FILE_OPEN_SMF, OnFileOpenSmf)
   ON_COMMAND(ID_FILE_SAVE_SMF, OnFileSaveSmf)
-  ON_COMMAND(ID_FILE_OPEN_MDW, OnFileOpenMdw)
-  ON_COMMAND(ID_FILE_SAVE_MDW, OnFileSaveMdw)
-  ON_COMMAND(ID_FILE_SAVEAS_MDW, OnFileSaveasMdw)
+//  ON_COMMAND(ID_FILE_OPEN_MDW, OnFileOpenMdw)
+//  ON_COMMAND(ID_FILE_SAVE_MDW, OnFileSaveMdw)
+//  ON_COMMAND(ID_FILE_SAVEAS_MDW, OnFileSaveasMdw)
   ON_COMMAND(ID_MENU_SCREEN_REMESH, OnMenuScreenRemesh)
   ON_UPDATE_COMMAND_UI(ID_MENU_SCREEN_REMESH, OnUpdateMenuScreenRemesh)
   ON_COMMAND(ID_MENU_SCREEN_REMESHBOUN, OnMenuScreenRemeshboun)
@@ -277,6 +277,7 @@ void CMainFrame::OnFileSaveSrc()
   }
 }
 
+#if 0
 static char BASED_CODE szmdwFilter[] = "MDW Files (*.mdw)|*.mdw|All Files (*.*)|*.*||";
 
 void CMainFrame::OnFileOpenMdw()
@@ -288,11 +289,11 @@ void CMainFrame::OnFileOpenMdw()
   // 第一引数は OPEN のとき TRUE
   // 第二、三引数はファイルの種類
   CFileDialog filedlg( TRUE, NULL, NULL,
-		       OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
-		       szmdwFilter, NULL );
+                       OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
+                       szmdwFilter, NULL );
 
   if( filedlg.DoModal() == IDOK) {
-    //		CWaitCursor wait;
+    //CWaitCursor wait;
     CString filename;
     filename = filedlg.GetPathName();
     //filenameに選択したファイルのフルパスが入る
@@ -310,19 +311,23 @@ void CMainFrame::OnFileOpenMdw()
     // set material (default)
     copy_material( &(ppd->matl), 0, (float *) mtlall );
 
+#if 0
     if ( swin->screenatr.current_tile != NULL ) {
       free_tile( swin->screenatr.current_tile );
       swin->screenatr.current_tile = NULL;
     }
+#endif
     if ( swin->screenatr.current_ppd != NULL ) {
       free_ppd( swin->screenatr.current_ppd );
       swin->screenatr.view_ppd = NULL;
     }
 
+#if 0
     swin->screenatr.current_tile = tile;
+#endif
     swin->screenatr.current_ppd  = ppd;
     swin->screenatr.view_ppd = ppd;
-			
+
     // normalization
     // enhanced
     swin->screenatr.rad_sph *= ppd->scale;
@@ -333,16 +338,18 @@ void CMainFrame::OnFileOpenMdw()
     // TEMP (あとで消す)
     for ( TEdge* ted = tile->sted; ted != NULL; ted = ted->nxt )
       ted->sp_gamma = swin->screenatr.sp_gamma;
-    
+ 
     CString strTitle = _T( lp );
     SetWindowText( strTitle );
     ShowWindow( SW_SHOW );
     UpdateWindow();
-    
+ 
     InvalidateRect( NULL, FALSE );
   }
 }
+#endif
 
+#if 0
 void CMainFrame::OnFileSaveMdw()
 {
   // TODO: この位置にコマンド ハンドラ用のコードを追加してください
@@ -351,50 +358,52 @@ void CMainFrame::OnFileSaveMdw()
   Tile *tile = swin->screenatr.current_tile;
   if ( tile == NULL ) return;
   if ( ppd == NULL ) return;
-  
+
   if ( strcpy(tile->filename, "") ) {
-    
+
     write_mdw_v10( tile->filename, ppd, tile );
-    
+
   } else {
-    
+
     CFileDialog filedlg( FALSE, NULL, NULL,
-			 OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
-			 szmdwFilter, NULL );
+                         OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
+                         szmdwFilter, NULL );
 
     if( filedlg.DoModal() == IDOK ) {
-      //		CWaitCursor wait;
+      //CWaitCursor wait;
       CString filename;
       filename = filedlg.GetPathName();
       //filenameに選択したファイルのフルパスが入る
 
       char *lp;
       lp = filename.GetBuffer( BUFSIZ );
-    
+
 
       write_mdw_v10( lp, ppd, tile );
-      
+
       strcpy( tile->filename, lp );
-    
+
       CString strTitle = _T( lp );
       SetWindowText( strTitle );
       ShowWindow( SW_SHOW );
       UpdateWindow();
     }
-    
+
   }
 }
+#endif
 
+#if 0
 void CMainFrame::OnFileSaveasMdw() 
 {
   // TODO: この位置にコマンド ハンドラ用のコードを追加してください
 
   CFileDialog filedlg( FALSE, NULL, NULL,
-		       OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
-		       szmdwFilter, NULL );
+                       OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
+                       szmdwFilter, NULL );
 
   if( filedlg.DoModal() == IDOK) {
-    //		CWaitCursor wait;
+    //CWaitCursor wait;
     CString filename;
     filename = filedlg.GetPathName();
     //filenameに選択したファイルのフルパスが入る
@@ -413,13 +422,14 @@ void CMainFrame::OnFileSaveasMdw()
     write_mdw_v10( lp, ppd, tile );
 
     strcpy( tile->filename, lp );
-    
+
     CString strTitle = _T( lp );
     SetWindowText( strTitle );
     ShowWindow( SW_SHOW );
     UpdateWindow();
   }
 }
+#endif
 
 static char BASED_CODE szsmfFilter[] = "SMF Files (*.smf)|*.smf|All Files (*.*)|*.*||";
 
@@ -1030,6 +1040,7 @@ void CMainFrame::OnViewMaterial()
 
 }
 
+#if 0
 #include "TileDialog.h"
 CTileDialog *td = NULL;
 
@@ -1048,8 +1059,9 @@ void CMainFrame::OnMenuEditTile()
 
   BOOL bResult = td->Create();
   ASSERT( bResult );
-  
+
 }
+#endif
 
 #include "SPDialog.h"
 
@@ -1074,6 +1086,7 @@ void CMainFrame::OnMenuSpathCreate()
   ASSERT( bResult );
 }
 
+#if 0
 #include "sigproc.h"
 
 void CMainFrame::OnMenuFairingSp() 
@@ -1098,6 +1111,7 @@ void CMainFrame::OnMenuFairingSp()
   // Redraw
   InvalidateRect( NULL, FALSE );
 }
+#endif
 
 #include "MeshInfoDialog.h"
 CMeshInfoDialog *midlg;
