@@ -14,11 +14,19 @@ This software was originally developed in 1997-2000 and was renovated in 2016 so
 
 ## Getting Started
 
+### Windows
+
 Double-click src\OpenGL.sln (A solution file for VS2015) and then "build the solution", and if successfully finished, you can find an executable in src\Release\OpenGL.exe .
 
-### Prerequisites
+### Unix (command-line version)
 
-This software uses MFC (Microsoft Foundation Class). Then, to build this software, VS2015 Professional or upper versions are required.
+Makefile is included in src directory. Then, enter the src directory and type "make linux" or "make cygin".
+
+## Prerequisites
+
+This software uses MFC (Microsoft Foundation Class). Then, to build this software, VS2015 Professional or upper versions are required for Windows application.
+
+For command-line version, there is no prerequities to build the binary.
 
 ## Authors
 

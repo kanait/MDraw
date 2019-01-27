@@ -23,15 +23,14 @@ DATADIR		= $(ROOTDIR)/data
 
 BSHEADERS	= file.h matlib.h mytime.h oppd.h \
                   ppd.h ppdedge.h ppdface.h ppdlist.h ppdloop.h ppdnormal.h \
-		  ppdpart.h ppdsolid.h ppdvertex.h ps.h quadtree.h linbcg.h \
-		  sigproc.h smd.h smdsrc.h smf.h tile.h hestack.h veclib.h \
-		  dspr.h hidden.h intsec.h params.h
-BSSRCS		= file.cxx dspr.cxx mytime.cxx oppd.cxx \
-		  linbcg.cxx matlib.cxx \
+		  ppdpart.h ppdsolid.h ppdvertex.h ps.h quadtree.h \
+		  smd.h smdsrc.h smf.h hestack.h veclib.h \
+		  hidden.h intsec.h params.h
+BSSRCS		= file.cxx mytime.cxx oppd.cxx matlib.cxx \
 		  ppd.cxx ppdedge.cxx ppdface.cxx ppdlist.cxx ppdloop.cxx \
 		  ppdnormal.cxx ppdpart.cxx ppdsolid.cxx \
-		  ppdvertex.cxx ps.cxx quadtree.cxx tile.cxx hestack.cxx \
-		  sigproc.cxx smf.cxx veclib.cxx intsec.cxx params.cxx
+		  ppdvertex.cxx ps.cxx quadtree.cxx hestack.cxx \
+		  smf.cxx veclib.cxx intsec.cxx params.cxx
 BSOBJS		= $(BSSRCS:cxx=o)
 BSLIBS		= 
 BSTARGET	= libBS.a
@@ -41,25 +40,13 @@ SPSRCS		= asp.cxx esp.cxx esptree.cxx sp.cxx sgprique.cxx sgraph.cxx
 SPOBJS		= $(SPSRCS:cxx=o)
 SPLIBS		= 
 
-SPMHEADERS	= spm.h remesh.h spedprique.h ffwarp.h umbrella.h uvwsigproc.h \
-		  floater.h cylspm.h tfcremesh.h
-SPMSRCS		= spm.cxx remesh.cxx spedprique.cxx ffwarp.cxx umbrella.cxx \
-		  uvwsigproc.cxx floater.cxx cylspm.cxx tfcremesh.cxx
-SPMOBJS		= $(SPMSRCS:cxx=o)
-SPMLIBS		= 
-
-TOPSHEADERS	= 
-TOPSSRCS	= tops.cxx
-TOPSOBJS	= $(TOPSSRCS:cxx=o)
-TOPSLIBS	= 
-
-ALLSRCS		= $(BSSRCS) $(SPSRCS) $(SPMSRCS) $(TOPSSRCS)
-ALLHEADERS	= $(BSHEADERS) $(SPHEADERS) $(SPMHEADERS) $(TOPSHEADERS)
+ALLSRCS		= $(BSSRCS) $(SPSRCS)
+ALLHEADERS	= $(BSHEADERS) $(SPHEADERS)
 
 ###################
 
 LIBS		= -L. -lBS $(LDLIBS)
-SAMPLE		= ppdsp ppdspm ppdtops
+SAMPLE		= ppdsp
 
 all:
 	@echo "	Linux:		make linux"
@@ -106,17 +93,9 @@ $(BSTARGET): $(BSOBJS)
 ppdsp: $(BSTARGET) $(SPOBJS)
 	$(CXX) $(CXXFLAGS) -o ppdsp $(SPOBJS) $(LIBS)
 
-ppdspm: $(BSTARGET) $(SPMOBJS)
-	$(CXX) $(CXXFLAGS) -o ppdspm $(SPMOBJS) $(LIBS)
-
-ppdtops: $(BSTARGET) $(TOPSOBJS)
-	$(CXX) $(CXXFLAGS) -o ppdtops $(TOPSOBJS) $(LIBS)
-
 clean:
 	$(RM) $(BSOBJS) $(BSTARGET)
 	$(RM) $(SPOBJS)
-	$(RM) $(SPMOBJS)
-	$(RM) $(TOPSOBJS)
 	$(RM) -rf Release Debug
 	$(RM) $(CORE)
 
