@@ -144,7 +144,6 @@
     <ClCompile Include="esptree.cxx" />
     <ClCompile Include="file.cxx" />
     <ClCompile Include="glppd.cpp" />
-    <ClCompile Include="gltile.cpp" />
     <ClCompile Include="hestack.cxx" />
     <ClCompile Include="hidden.cpp" />
     <ClCompile Include="intsec.cxx" />
@@ -207,7 +206,6 @@
     <ClInclude Include="esptree.h" />
     <ClInclude Include="file.h" />
     <ClInclude Include="glppd.h" />
-    <ClInclude Include="gltile.h" />
     <ClInclude Include="hestack.h" />
     <ClInclude Include="hidden.h" />
     <ClInclude Include="intsec.h" />

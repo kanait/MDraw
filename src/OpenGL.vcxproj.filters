@@ -45,9 +45,6 @@
     <ClCompile Include="glppd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gltile.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="hestack.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -209,9 +206,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="glppd.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="gltile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="hestack.h">

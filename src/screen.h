@@ -70,8 +70,10 @@ typedef struct _pers {
 
 #define TWO_VERTICES  2
 
+#if 0
 #ifndef _TILE_H
 #include "tile.h"
+#endif
 #endif
 
 typedef struct _sellist SelList;
@@ -82,9 +84,10 @@ struct _sellist {
   Spvt    *vt;
   Spfc    *fc;
   Splp    *lp;
+#if 0
   TEdge   *ted;
   TFace   *tf;
-  
+#endif
   SelList *nxt, *prv;
 };
 
