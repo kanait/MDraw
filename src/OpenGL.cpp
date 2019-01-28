@@ -94,7 +94,7 @@ BOOL COpenGLApp::InitInstance()
 	  return FALSE;
 
 	// メイン ウィンドウが初期化されたので、表示と更新を行います。
-	CString strTitle = _T("MeshDraw Version 0.901: Copyright(c) 1998-2000 by Takashi Kanai; All rights reserved.");
+	CString strTitle = _T("MeshDraw Version 1.0: Copyright(c) 1997-2000 Takashi Kanai");
 	m_pMainWnd ->SetWindowText( strTitle );
 	m_pMainWnd->ShowWindow( SW_SHOW );
 	m_pMainWnd->UpdateWindow();
